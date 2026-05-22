@@ -10,8 +10,11 @@ body {
   width: 100%;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 main {
-  height: 100%;
   width: 100%;
   background-color: #fee3c6;
   font-family:
@@ -29,7 +32,8 @@ main {
 }
 
 #section-1 {
-  height: 100%;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   display: grid;
   border: 5px solid #6f2921;
@@ -114,7 +118,8 @@ header h2 {
 }
 
 .hero-left-top h1 {
-  font-size: 60px;
+  /* font-size: 60px; */
+  font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 800;
   letter-spacing: -1px;
   line-height: 60px;
@@ -126,7 +131,9 @@ header h2 {
 .hero-left-top p {
   font-size: 18px;
   color: #b70a03;
-  width: 60%;
+  /* width: 60%; */
+  width: 100%;
+  max-width: 600px;
 }
 
 .hero-left-top > button {
@@ -176,7 +183,8 @@ header h2 {
 }
 
 #section-2 {
-  height: 100%;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   border: 5px solid #6f2921;
   border-top: none;
@@ -185,7 +193,8 @@ header h2 {
   display: grid;
 
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 3fr 3fr 0.6fr;
+  grid-template-rows: 0.4fr 3fr 3fr 0.6fr;
+  /* grid-template-rows: auto auto auto auto; */
 
   grid-template-areas:
     "heading heading heading heading"
@@ -305,7 +314,8 @@ header h2 {
 }
 
 #section-3 {
-  height: 100%;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   background-color: #fee3c6;
   border: 5px solid #6f2921;
@@ -333,7 +343,7 @@ header h2 {
 .left-side .photo-div {
   height: 100%;
   width: 100%;
-  background-image: url(./girl.png);
+  background-image: url(./assets/girl.png);
   background-position: center;
   background-size: cover;
 }
@@ -345,7 +355,8 @@ header h2 {
   padding: 10px 30px;
 }
 .head h2 {
-  font-size: 70px;
+  /* font-size: 70px; */
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
   text-transform: uppercase;
   color: #b70a03;
   letter-spacing: -5px;
@@ -509,7 +520,8 @@ header h2 {
 }
 
 #section-4 {
-  height: 100%;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   background-color: #fee3c6;
   border: 5px solid #6f2921;
@@ -517,6 +529,7 @@ header h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   grid-template-rows: 0.5fr 1fr 1fr 1fr 0.4fr;
+  /* grid-template-rows: auto auto auto auto auto; */
 
   grid-template-areas:
     "top-news top-news top-news"
@@ -533,7 +546,8 @@ header h2 {
   align-items: center;
 }
 .top-news h2 {
-  font-size: 45px;
+  /* font-size: 45px; */
+   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   display: inline-block;
   transform: scaleY(1.2);
@@ -683,14 +697,16 @@ header h2 {
 }
 
 #section-5 {
-  height: 100%;
+  min-height: 100vh;
+  height: auto;
   width: 100%;
   background-color: #fee3c6;
   border: 5px solid #6f2921;
   border-top: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 2.5fr 0.5fr 1.5fr 0.3fr;
+  grid-template-rows: 0.5fr 2.7fr 0.5fr 1.5fr 0.3fr;
+  /* grid-template-rows: auto auto auto auto auto; */
 
   grid-template-areas:
     "f-top f-top f-top f-top"
@@ -793,7 +809,8 @@ header h2 {
 }
 
 .f-center h2{
-  font-size: 50px;
+  /* font-size: 50px; */
+  font-size: clamp(2rem, 5vw, 3.5rem);
   color: #b70a03;
   font-weight: 800;
   display: inline-block;
@@ -925,5 +942,11 @@ header h2 {
 .f-bottom P{
     color: #b70a03;
     font-size: 21px;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
