@@ -323,7 +323,7 @@ header h2 {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
 
   grid-template-areas:
     "left-side head"
@@ -356,17 +356,17 @@ header h2 {
 }
 .head h2 {
   /* font-size: 70px; */
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2rem, 3vw, 5rem);
   text-transform: uppercase;
   color: #b70a03;
-  letter-spacing: -5px;
+  letter-spacing: -1px;
   font-weight: 800;
   display: inline-block;
   transform: scaleY(1.2);
 }
 .play1 {
   grid-area: play1;
-  padding: 0 30px 25px 30px;
+  padding: 0 30px 10px 30px;
 }
 
 .play .doit {
@@ -441,7 +441,7 @@ header h2 {
 
 .play2 {
   grid-area: play2;
-  padding: 10px 30px 25px 30px;
+  padding: 10px 30px 10px 30px;
 }
 
 .play2 .doit {
@@ -461,7 +461,7 @@ header h2 {
 
 .play3 {
   grid-area: play3;
-  padding: 10px 30px 25px 30px;
+  padding: 10px 30px 10px 30px;
 }
 
 .play3 .doit {
@@ -481,7 +481,7 @@ header h2 {
 
 .play4 {
   grid-area: play4;
-  padding: 10px 30px 25px 30px;
+  padding: 10px 30px 10px 30px;
 }
 
 .play4 .doit {
@@ -501,7 +501,7 @@ header h2 {
 
 .play5 {
   grid-area: play5;
-  padding: 10px 30px 25px 30px;
+  padding: 10px 30px 10px 30px;
 }
 
 .play5 .doit {
